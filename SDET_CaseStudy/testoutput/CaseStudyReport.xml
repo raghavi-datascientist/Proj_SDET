@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="63.279">
+<testcase classname="Login Feature" name="Login to application validate User Email" time="19.164">
+<system-out><![CDATA[Given Login application present.............................................passed
+When enter valid username "Raghavi".........................................passed
+And enter valid password "ragh@1234"........................................passed
+And click on Login validButton..............................................passed
+Then I should see email as "raghavi.br@gmail.com"...........................passed
+Then close the driver.......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Feature" name="Login to application validate User Email 2" time="43.561">
+<system-out><![CDATA[Given Login application present.............................................passed
+When enter valid username "Raghavi".........................................passed
+And enter valid password "ragh@1234"........................................passed
+And click on Login validButton..............................................passed
+Then I should see email as "raghavi.br@gmail.com"...........................passed
+And click on Inbox..........................................................passed
+And click on Compose Message................................................passed
+And enter value for Send to as "abc1234567".................................passed
+And enter Subject as "Hi For Testing".......................................passed
+And enter Message as "Hello Admin,
+ This is for testing. 
+From,
+ Raghavi"...passed
+And click on send button....................................................passed
+Then I should see acknowledgement as "The message has been sent to abc def (abc1234567)".passed
+Then close the driver.......................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
